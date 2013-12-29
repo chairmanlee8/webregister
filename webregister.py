@@ -7,7 +7,12 @@ from selenium.webdriver.support import expected_conditions as EC # available sin
 from time import sleep
 import requests
 import sys
+import os
 from datetime import datetime
+
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
 
 nexmo_key = '07a0e4e7'
 nexmo_secret = 'e561a9c4'
